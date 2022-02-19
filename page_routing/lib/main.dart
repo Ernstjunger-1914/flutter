@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     title: "Flutter Page Route",
+    // /을 앱이 시작할 route로 지정
     initialRoute: '/',
     routes: {
+      // / route로 이동 시, MainScreen Widget 생성
       '/': (context) => MainScreen(),
+      // /about route로 이동 시, SubScreen Widget 생성
       '/about': (context) => SubScreen(),
     },
   ));
